@@ -2,7 +2,7 @@
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
-  <Hotel Number="11" Stars="4">
+  <Hotel Number="1" Rating="4">
     <Name>The Westin Tempe</Name>
     <Address>
       <Street>11 E 7th St</Street>
@@ -15,7 +15,7 @@
     <Phone>480-968-8885</Phone>
   </Hotel>
 
-  <Hotel Number="12" Stars="4">
+  <Hotel Number="2" Rating="4">
     <Name>Omni Tempe Hotel at ASU</Name>
     <Address>
       <Street>7 E University Dr</Street>
@@ -27,7 +27,7 @@
     <Phone>602-794-8600</Phone>
   </Hotel>
 
-  <Hotel Number="13" Stars="3">
+  <Hotel Number="3" Rating="3">
     <Name>Graduate Tempe</Name>
     <Address>
       <Street>225 E Apache Blvd</Street>
@@ -39,7 +39,7 @@
     <Phone>480-967-9431</Phone>
   </Hotel>
 
-  <Hotel Number="14" Stars="3">
+  <Hotel Number="4" Rating="3">
     <Name>Moxy Phoenix Tempe/ASU Area</Name>
     <Address>
       <Street>1333 S Rural Rd</Street>
@@ -51,7 +51,7 @@
     <Phone>480-337-2850</Phone>
   </Hotel>
 
-  <Hotel Number="15" Stars="3">
+  <Hotel Number="5" Rating="3">
     <Name>AC Hotel Phoenix Tempe/Downtown</Name>
     <Address>
       <Street>100 E Rio Salado Pkwy</Street>
@@ -63,7 +63,7 @@
     <Phone>480-642-6140</Phone>
   </Hotel>
 
-  <Hotel Number="16" Stars="3">
+  <Hotel Number="6" Rating="3">
     <Name>Hilton Garden Inn Phoenix/Tempe ASU Area</Name>
     <Address>
       <Street>7290 S Price Rd</Street>
@@ -75,7 +75,7 @@
     <Phone>480-966-7000</Phone>
   </Hotel>
 
-  <Hotel Number="17" Stars="3">
+  <Hotel Number="7" Rating="3">
     <Name>Canopy by Hilton Tempe Downtown</Name>
     <Address>
       <Street>108 E University Dr</Street>
@@ -87,7 +87,7 @@
     <Phone>480-968-6800</Phone>
   </Hotel>
 
-  <Hotel Number="18" Stars="3">
+  <Hotel Number="8" Rating="3">
     <Name>Courtyard by Marriott Tempe Downtown</Name>
     <Address>
       <Street>601 S Ash Ave</Street>
@@ -99,7 +99,7 @@
     <Phone>480-966-2800</Phone>
   </Hotel>
 
-  <Hotel Number="19" Stars="3">
+  <Hotel Number="9" Rating="3">
     <Name>Residence Inn Tempe Downtown/University</Name>
     <Address>
       <Street>510 S Forest Ave</Street>
@@ -111,7 +111,7 @@
     <Phone>480-968-8888</Phone>
   </Hotel>
 
-  <Hotel Number="20" Stars="2">
+  <Hotel Number="10" Rating="2">
     <Name>Hyatt Place Tempe/Phoenix</Name>
     <Address>
       <Street>1413 W Rio Salado Pkwy</Street>
@@ -124,4 +124,3 @@
   </Hotel>
 
 </Hotels>
-
