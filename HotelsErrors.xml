@@ -4,7 +4,6 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
-  <!-- ERROR #1: Missing required attribute Number -->
   <Hotel Rating="4" NearestAirport="Phoenix Sky Harbor">
     <Name>Example Inn</Name>
     <Address>
@@ -16,7 +15,6 @@
     <Phone>480-000-0000</Phone>
   </Hotel>
 
-  <!-- ERROR #2: State not 2-letter code -->
   <Hotel Number="2" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>Bad State Suites</Name>
     <Address>
@@ -28,7 +26,6 @@
     <Phone>480-111-1111</Phone>
   </Hotel>
 
-  <!-- ERROR #3: Zip not 5 digits -->
   <Hotel Number="3" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>Weird Zip Hotel</Name>
     <Address>
@@ -40,7 +37,6 @@
     <Phone>480-222-2222</Phone>
   </Hotel>
 
-  <!-- ERROR #4: Wrong sequence (Phone before Address) -->
   <Hotel Number="4" Rating="2" NearestAirport="Phoenix Sky Harbor">
     <Name>Order Breaker Lodge</Name>
     <Phone>480-333-3333</Phone>
@@ -52,7 +48,6 @@
     </Address>
   </Hotel>
 
-  <!-- ERROR #5: Duplicate Name element (only one allowed by type) -->
   <Hotel Number="5" Rating="5" NearestAirport="Phoenix Sky Harbor">
     <Name>Duplicate Name Resort</Name>
     <Name>Extra Name Not Allowed</Name>
@@ -64,8 +59,6 @@
     </Address>
     <Phone>480-444-4444</Phone>
   </Hotel>
-
-  <!-- ===== The next five are VALID to keep the file realistic ===== -->
 
   <Hotel Number="6" Rating="4" NearestAirport="Phoenix Sky Harbor">
     <Name>The Westin Tempe</Name>
@@ -124,3 +117,4 @@
   </Hotel>
 
 </Hotels>
+
