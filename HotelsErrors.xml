@@ -1,37 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
   <Hotel Rating="4.2">
-    <Name>Broken Address Hotel</Name>
-    <Phone>800-000-0000</Phone>
-    <Address>
-      <Number>1</Number>
-      <Street>Main</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
-  </Hotel>
-
-  <Hotel>
-    <Name>Missing Zip Inn</Name>
-    <Phone>480-111-1111</Phone>
-    <Address Number="2" Street="Second St" City="Phoenix" State="AZ" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel>
-    <Name>Wrong Order Lodge</Name>
-    <Address Number="4" Street="Fourth St" City="Phoenix" State="AZ" Zip="85003" NearestAirport="Sky Harbor"/>
-    <Phone>480-333-3333</Phone>
+    <Name>InvalidPhoneFormat</Name>
+    <Phone>8009378461</Phone>
+    <Address Number="11" Street="E 7th St" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel Rating="3.5">
-    <Name>Unclosed Address Hotel</Name>
-    <Phone>480-444-4444</Phone>
-    <Address Number="5" Street="Fifth St" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor">
+    <Name>MissingZip</Name>
+    <Phone>480-555-0100</Phone>
+    <Address Number="100" Street="N 1st St" City="Phoenix" State="AZ" NearestAirport="Sky Harbor"/>
+  </Hotel>
+
+  <Hotel Rating="Excellent">
+    <Name>StringRating</Name>
+    <Phone>602-321-7789</Phone>
+    <Address Number="4000" Street="S Rural Rd" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor"/>
+  </Hotel>
+
+  <Hotel Rating="4.1">
+    <Name>ExtraElementHotel</Name>
+    <Phone>480-317-8941</Phone>
+    <InvalidTag>ThisShouldNotExist</InvalidTag>
+    <Address Number="601" Street="S Ash Ave" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
+  </Hotel>
+
+  <Hotel Rating="4.3">
+    <Name>AddressAsElement</Name>
+    <Phone>602-849-6300</Phone>
+    <Address>
+      <Number>44</Number>
+      <Street>W Monroe St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85003</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
   </Hotel>
 
 </Hotels>
