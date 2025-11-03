@@ -2,7 +2,7 @@
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
-  <Hotel Stars="4">
+  <Hotel Rating="4">
     <Name>Example Inn</Name>
     <Address>
       <Street>1 Test Way</Street>
@@ -14,7 +14,7 @@
     <Phone>480-000-0000</Phone>
   </Hotel>
 
-  <Hotel Number="21" Stars="3">
+  <Hotel Number="21" Rating="3">
     <Name>Bad State Suites</Name>
     <Address>
       <Street>22 Wrong Pl</Street>
@@ -38,7 +38,7 @@
     <Phone>480-222-2222</Phone>
   </Hotel>
 
-  <Hotel Number="23" Stars="2">
+  <Hotel Number="23" Rating="2">
     <Name>Order Breaker Lodge</Name>
     <Address>
       <Street>44 Sequence Rd</Street>
@@ -50,7 +50,7 @@
     <NearestAirport>Phoenix Sky Harbor</NearestAirport>
   </Hotel>
 
-  <Hotel Number="24" Stars="5">
+  <Hotel Number="24" Rating="5">
     <Name>Missing City Resort</Name>
     <Address>
       <Street>55 Omission Ave</Street>
@@ -63,4 +63,3 @@
   </Hotel>
 
 </Hotels>
-
