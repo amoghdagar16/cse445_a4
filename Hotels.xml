@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-  <Hotel _Rating="4.2">
+  <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>800-937-8461</Phone>
     <Phone>480-968-8885</Phone>
@@ -14,7 +14,7 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="4.5">
+  <Hotel Rating="4.5">
     <Name>Marriott</Name>
     <Phone>602-555-1248</Phone>
     <Address>
@@ -41,7 +41,7 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="3.8">
+  <Hotel Rating="3.8">
     <Name>Hyatt Place</Name>
     <Phone>480-555-0100</Phone>
     <Address>
@@ -67,7 +67,7 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="4.0">
+  <Hotel Rating="4.0">
     <Name>AC Hotel Downtown</Name>
     <Phone>602-849-6300</Phone>
     <Address>
@@ -80,7 +80,7 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="4.6">
+  <Hotel Rating="4.6">
     <Name>DoubleTree Suites</Name>
     <Phone>480-967-1441</Phone>
     <Phone>480-967-1442</Phone>
@@ -107,7 +107,7 @@
     </Address>
   </Hotel>
 
-  <Hotel _Rating="4.1">
+  <Hotel Rating="4.1">
     <Name>Embassy Suites</Name>
     <Phone>480-897-7444</Phone>
     <Address>
