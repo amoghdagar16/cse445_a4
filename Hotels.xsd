@@ -3,57 +3,62 @@
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 
- <xs:element name="Hotels">
-  <xs:complexType>
-    <xs:sequence>
-      <xs:element name="Hotel" maxOccurs="unbounded">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element name="Name" type="xs:string"/>
-            <xs:element name="Address">
-              <xs:complexType>
-                <xs:sequence>
-                  <xs:element name="Street" type="xs:string"/>
-                  <xs:element name="City" type="xs:string"/>
-                  <xs:element name="State">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:pattern value="[A-Z]{2}"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:element>
-                  <xs:element name="Zip">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:pattern value="\d{5}"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:element>
-                </xs:sequence>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="NearestAirport" type="xs:string"/>
-            <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
-          </xs:sequence>
-          
-          <xs:attribute name="Number" use="required">
-            <xs:simpleType>
-              <xs:restriction base="xs:int">
-                <xs:minInclusive value="1"/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:attribute>
+  <!-- Root element -->
+  <xs:element name="Hotels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Hotel" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string"/>
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Street" type="xs:string"/>
+                    <xs:element name="City" type="xs:string"/>
+                    <xs:element name="State">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="[A-Z]{2}"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Zip">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="\d{5}"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NearestAirport" type="xs:string"/>
+              <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
 
-          <xs:attribute name="Rating" use="optional">
-            <xs:simpleType>
-              <xs:restriction base="xs:int">
-                <xs:minInclusive value="1"/>
-                <xs:maxInclusive value="5"/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:attribute>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-</xs:element>
+            <!-- Attributes -->
+            <xs:attribute name="Number" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:int">
+                  <xs:minInclusive value="1"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+
+            <!-- Use Rating (1..5), not Stars -->
+            <xs:attribute name="Rating" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:int">
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="5"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
