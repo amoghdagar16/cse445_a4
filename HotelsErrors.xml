@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
+<Hotels
+  xmlns="http://venus.sod.asu.edu/WSRepository/xml"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
-  <Hotel Rating="4">
+  <!-- Error #1: Missing required attribute Number -->
+  <Hotel Rating="4" NearestAirport="Phoenix Sky Harbor">
     <Name>Example Inn</Name>
     <Address>
       <Street>1 Test Way</Street>
@@ -10,11 +13,11 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
     <Phone>480-000-0000</Phone>
   </Hotel>
 
-  <Hotel Number="21" Rating="3">
+  <!-- Error #2: State not 2-letter code -->
+  <Hotel Number="21" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>Bad State Suites</Name>
     <Address>
       <Street>22 Wrong Pl</Street>
@@ -22,11 +25,11 @@
       <State>Arizona</State>
       <Zip>85281</Zip>
     </Address>
-    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
     <Phone>480-111-1111</Phone>
   </Hotel>
 
-  <Hotel Number="22">
+  <!-- Error #3: Zip not 5 digits (contains a letter) -->
+  <Hotel Number="22" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>Weird Zip Hotel</Name>
     <Address>
       <Street>33 Zip Ln</Street>
@@ -34,31 +37,30 @@
       <State>AZ</State>
       <Zip>8528A</Zip>
     </Address>
-    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
     <Phone>480-222-2222</Phone>
   </Hotel>
 
-  <Hotel Number="23" Rating="2">
+  <!-- Error #4: Wrong element order (Phone before Address) -->
+  <Hotel Number="23" Rating="2" NearestAirport="Phoenix Sky Harbor">
     <Name>Order Breaker Lodge</Name>
+    <Phone>480-333-3333</Phone>
     <Address>
       <Street>44 Sequence Rd</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <Phone>480-333-3333</Phone>
-    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
   </Hotel>
 
-  <Hotel Number="24" Rating="5">
+  <!-- Error #5: Address missing required child element (City) -->
+  <Hotel Number="24" Rating="5" NearestAirport="Phoenix Sky Harbor">
     <Name>Missing City Resort</Name>
     <Address>
       <Street>55 Omission Ave</Street>
-
+      <!-- Missing City -->
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
     <Phone>480-444-4444</Phone>
   </Hotel>
 
