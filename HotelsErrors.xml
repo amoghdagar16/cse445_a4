@@ -4,9 +4,9 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
-  <!-- Error #1: Missing required attribute Number -->
+  <!-- #1: Missing required attribute Number -->
   <Hotel Rating="4" NearestAirport="Phoenix Sky Harbor">
-    <Name>Attr Missing Number Inn</Name>
+    <Name>Example Inn</Name>
     <Address>
       <Street>1 Test Way</Street>
       <City>Tempe</City>
@@ -16,48 +16,48 @@
     <Phone>480-000-0000</Phone>
   </Hotel>
 
-  <!-- Error #2: Number minInclusive violated (0) -->
-  <Hotel Number="0" Rating="3" NearestAirport="Phoenix Sky Harbor">
-    <Name>Attr Number Zero Suites</Name>
+  <!-- #2: State not 2-letter code -->
+  <Hotel Number="21" Rating="3" NearestAirport="Phoenix Sky Harbor">
+    <Name>Bad State Suites</Name>
     <Address>
       <Street>22 Wrong Pl</Street>
       <City>Tempe</City>
-      <State>AZ</State>
+      <State>Arizona</State>
       <Zip>85281</Zip>
     </Address>
     <Phone>480-111-1111</Phone>
   </Hotel>
 
-  <!-- Error #3: Missing required attribute NearestAirport -->
-  <Hotel Number="22" Rating="3">
-    <Name>Attr Missing Airport Hotel</Name>
+  <!-- #3: Zip not 5 digits -->
+  <Hotel Number="22" Rating="3" NearestAirport="Phoenix Sky Harbor">
+    <Name>Weird Zip Hotel</Name>
     <Address>
-      <Street>33 Sample Ln</Street>
+      <Street>33 Zip Ln</Street>
       <City>Tempe</City>
       <State>AZ</State>
-      <Zip>85281</Zip>
+      <Zip>8528A</Zip>
     </Address>
     <Phone>480-222-2222</Phone>
   </Hotel>
 
-  <!-- Error #4: Rating out of allowed range (6) -->
-  <Hotel Number="23" Rating="6" NearestAirport="Phoenix Sky Harbor">
-    <Name>Attr Bad Rating Lodge</Name>
+  <!-- #4: Wrong element order (Phone before Address) -->
+  <Hotel Number="23" Rating="2" NearestAirport="Phoenix Sky Harbor">
+    <Name>Order Breaker Lodge</Name>
+    <Phone>480-333-3333</Phone>
     <Address>
-      <Street>44 Range Rd</Street>
+      <Street>44 Sequence Rd</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <Phone>480-333-3333</Phone>
   </Hotel>
 
-  <!-- Error #5: Unexpected/undeclared attribute 'Stars' -->
-  <Hotel Number="24" Rating="3" Stars="5" NearestAirport="Phoenix Sky Harbor">
-    <Name>Attr Unexpected Stars Resort</Name>
+  <!-- #5: Address missing required child (City) -->
+  <Hotel Number="24" Rating="5" NearestAirport="Phoenix Sky Harbor">
+    <Name>Missing City Resort</Name>
     <Address>
       <Street>55 Omission Ave</Street>
-      <City>Tempe</City>
+      <!-- City missing -->
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
