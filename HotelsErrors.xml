@@ -4,7 +4,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
-  <!-- #1: Missing required attribute Number -->
+  <!-- ERROR #1: Missing required attribute Number -->
   <Hotel Rating="4" NearestAirport="Phoenix Sky Harbor">
     <Name>Example Inn</Name>
     <Address>
@@ -16,8 +16,8 @@
     <Phone>480-000-0000</Phone>
   </Hotel>
 
-  <!-- #2: State not 2-letter code -->
-  <Hotel Number="21" Rating="3" NearestAirport="Phoenix Sky Harbor">
+  <!-- ERROR #2: State not 2-letter code -->
+  <Hotel Number="2" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>Bad State Suites</Name>
     <Address>
       <Street>22 Wrong Pl</Street>
@@ -28,8 +28,8 @@
     <Phone>480-111-1111</Phone>
   </Hotel>
 
-  <!-- #3: Zip not 5 digits -->
-  <Hotel Number="22" Rating="3" NearestAirport="Phoenix Sky Harbor">
+  <!-- ERROR #3: Zip not 5 digits (contains a letter) -->
+  <Hotel Number="3" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>Weird Zip Hotel</Name>
     <Address>
       <Street>33 Zip Ln</Street>
@@ -40,8 +40,8 @@
     <Phone>480-222-2222</Phone>
   </Hotel>
 
-  <!-- #4: Wrong element order (Phone before Address) -->
-  <Hotel Number="23" Rating="2" NearestAirport="Phoenix Sky Harbor">
+  <!-- ERROR #4: Wrong element order (Phone before Address) -->
+  <Hotel Number="4" Rating="2" NearestAirport="Phoenix Sky Harbor">
     <Name>Order Breaker Lodge</Name>
     <Phone>480-333-3333</Phone>
     <Address>
@@ -52,8 +52,8 @@
     </Address>
   </Hotel>
 
-  <!-- #5: Address missing required child (City) -->
-  <Hotel Number="24" Rating="5" NearestAirport="Phoenix Sky Harbor">
+  <!-- ERROR #5: Address missing required child (City) -->
+  <Hotel Number="5" Rating="5" NearestAirport="Phoenix Sky Harbor">
     <Name>Missing City Resort</Name>
     <Address>
       <Street>55 Omission Ave</Street>
@@ -62,6 +62,62 @@
       <Zip>85281</Zip>
     </Address>
     <Phone>480-444-4444</Phone>
+  </Hotel>
+
+  <Hotel Number="6" Rating="4" NearestAirport="Phoenix Sky Harbor">
+    <Name>The Westin Tempe</Name>
+    <Address>
+      <Street>11 E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Phone>800-937-8461</Phone>
+    <Phone>480-968-8885</Phone>
+  </Hotel>
+
+  <Hotel Number="7" Rating="4" NearestAirport="Phoenix Sky Harbor">
+    <Name>Omni Tempe Hotel at ASU</Name>
+    <Address>
+      <Street>7 E University Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Phone>602-794-8600</Phone>
+  </Hotel>
+
+  <Hotel Number="8" Rating="3" NearestAirport="Phoenix Sky Harbor">
+    <Name>Graduate Tempe</Name>
+    <Address>
+      <Street>225 E Apache Blvd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Phone>480-967-9431</Phone>
+  </Hotel>
+
+  <Hotel Number="9" Rating="3" NearestAirport="Phoenix Sky Harbor">
+    <Name>Moxy Phoenix Tempe/ASU Area</Name>
+    <Address>
+      <Street>1333 S Rural Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Phone>480-337-2850</Phone>
+  </Hotel>
+
+  <Hotel Number="10" Rating="3" NearestAirport="Phoenix Sky Harbor">
+    <Name>AC Hotel Phoenix Tempe/Downtown</Name>
+    <Address>
+      <Street>100 E Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Phone>480-642-6140</Phone>
   </Hotel>
 
 </Hotels>
