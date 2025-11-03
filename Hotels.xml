@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels>
+<Hotels
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
+
   <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>800-937-8461</Phone>
@@ -62,4 +65,5 @@
     <Phone>480-967-2300</Phone>
     <Address Number="510" Street="S Forest Ave" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
   </Hotel>
+
 </Hotels>
