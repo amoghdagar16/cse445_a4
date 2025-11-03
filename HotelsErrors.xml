@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
+
+  <Hotel Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address Number="11" Street="E 7th St" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
+  </Hotel>
+
+  <Hotel>
+    <Name>Marriott</Name>
+    <Phone>602-555-2345</Phone>
+    <Address Number="100" Street="N 1st Ave" City="Phoenix" State="AZ" Zip="85003" NearestAirport="Sky Harbor"/>
+  </Hotel>
+
+  <Hotel Rating="3.8">
+    <Name>Hilton Garden Inn</Name>
+    <Address Number="4000" Street="E University Dr" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
+  </Hotel>
+
+  <Hotel Rating="4.1">
+    <Name>Hyatt Place</Name>
+    <Phone>602-789-7777</Phone>
+    <Address Number="7300" Street="E 3rd Ave" City="Scottsdale" State="AZ" Zip="85251" NearestAirport="Sky Harbor">
+  </Hotel>
+
+  <Hotel Rating="3.9">
+    <Name>Holiday Inn Express</Name>
+    <Name>Duplicate Name</Name>
+    <Phone>602-333-2000</Phone>
+    <Address Number="60" Street="E 5th St" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
+  </Hotel>
+
+</Hotel>
