@@ -34,35 +34,4 @@
     <Address Number="601" Street="S Ash Ave" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
   </Hotel>
 
-  <Hotel Rating="4.3">
-    <Name>AC Hotel Downtown</Name>
-    <Phone>602-849-6300</Phone>
-    <Address Number="44" Street="W Monroe St" City="Phoenix" State="AZ" Zip="85003" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="4.6">
-    <Name>DoubleTree Suites</Name>
-    <Phone>480-967-1441</Phone>
-    <Phone>480-967-1442</Phone>
-    <Address Number="2100" Street="S Priest Dr" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="3.9">
-    <Name>Holiday Inn Express</Name>
-    <Phone>480-785-3500</Phone>
-    <Address Number="1520" Street="W Baseline Rd" City="Tempe" State="AZ" Zip="85283" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="4.1">
-    <Name>Embassy Suites</Name>
-    <Phone>480-897-7444</Phone>
-    <Address Number="4400" Street="S Rural Rd" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="4.0">
-    <Name>Residence Inn</Name>
-    <Phone>480-967-2300</Phone>
-    <Address Number="510" Street="S Forest Ave" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
 </Hotels>
