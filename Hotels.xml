@@ -4,132 +4,62 @@
     <Name>Westin</Name>
     <Phone>800-937-8461</Phone>
     <Phone>480-968-8885</Phone>
-    <Address>
-      <Number>11</Number>
-      <Street>E 7th St</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="11" Street="E 7th St" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel Rating="4.5">
     <Name>Marriott</Name>
     <Phone>602-555-1248</Phone>
-    <Address>
-      <Number>100</Number>
-      <Street>N 1st St</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85004</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="100" Street="N 1st St" City="Phoenix" State="AZ" Zip="85004" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel>
     <Name>Hilton Garden Inn</Name>
     <Phone>602-321-7789</Phone>
     <Phone>602-321-7790</Phone>
-    <Address>
-      <Number>4000</Number>
-      <Street>S Rural Rd</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85282</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="4000" Street="S Rural Rd" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel Rating="3.8">
     <Name>Hyatt Place</Name>
     <Phone>480-555-0100</Phone>
-    <Address>
-      <Number>1413</Number>
-      <Street>W Rio Salado Pkwy</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="1413" Street="W Rio Salado Pkwy" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel>
     <Name>Courtyard by Marriott</Name>
     <Phone>480-317-8941</Phone>
-    <Address>
-      <Number>601</Number>
-      <Street>S Ash Ave</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="601" Street="S Ash Ave" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel Rating="4.0">
     <Name>AC Hotel Downtown</Name>
     <Phone>602-849-6300</Phone>
-    <Address>
-      <Number>44</Number>
-      <Street>W Monroe St</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85003</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="44" Street="W Monroe St" City="Phoenix" State="AZ" Zip="85003" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel Rating="4.6">
     <Name>DoubleTree Suites</Name>
     <Phone>480-967-1441</Phone>
     <Phone>480-967-1442</Phone>
-    <Address>
-      <Number>2100</Number>
-      <Street>S Priest Dr</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85282</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="2100" Street="S Priest Dr" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel>
     <Name>Holiday Inn Express</Name>
     <Phone>480-785-3500</Phone>
-    <Address>
-      <Number>1520</Number>
-      <Street>W Baseline Rd</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85283</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="1520" Street="W Baseline Rd" City="Tempe" State="AZ" Zip="85283" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel Rating="4.1">
     <Name>Embassy Suites</Name>
     <Phone>480-897-7444</Phone>
-    <Address>
-      <Number>4400</Number>
-      <Street>S Rural Rd</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85282</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="4400" Street="S Rural Rd" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor"/>
   </Hotel>
 
   <Hotel>
     <Name>Residence Inn</Name>
     <Phone>480-967-2300</Phone>
-    <Address>
-      <Number>510</Number>
-      <Street>S Forest Ave</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
-    </Address>
+    <Address Number="510" Street="S Forest Ave" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
   </Hotel>
 </Hotels>
