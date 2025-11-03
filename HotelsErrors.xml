@@ -1,43 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <Hotel Rating="4.2">
-    <Name>InvalidPhoneFormat</Name>
-    <Phone>8009378461</Phone>
-    <Address Number="11" Street="E 7th St" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="3.5">
-    <Name>MissingZip</Name>
-    <Phone>480-555-0100</Phone>
-    <Address Number="100" Street="N 1st St" City="Phoenix" State="AZ" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="Excellent">
-    <Name>StringRating</Name>
-    <Phone>602-321-7789</Phone>
-    <Address Number="4000" Street="S Rural Rd" City="Tempe" State="AZ" Zip="85282" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="4.1">
-    <Name>ExtraElementHotel</Name>
-    <Phone>480-317-8941</Phone>
-    <InvalidTag>ThisShouldNotExist</InvalidTag>
-    <Address Number="601" Street="S Ash Ave" City="Tempe" State="AZ" Zip="85281" NearestAirport="Sky Harbor"/>
-  </Hotel>
-
-  <Hotel Rating="4.3">
-    <Name>AddressAsElement</Name>
-    <Phone>602-849-6300</Phone>
+  <Hotel Stars="4">
+    <Name>Example Inn</Name>
     <Address>
-      <Number>44</Number>
-      <Street>W Monroe St</Street>
-      <City>Phoenix</City>
+      <Street>1 Test Way</Street>
+      <City>Tempe</City>
       <State>AZ</State>
-      <Zip>85003</Zip>
-      <NearestAirport>Sky Harbor</NearestAirport>
+      <Zip>85281</Zip>
     </Address>
+    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
+    <Phone>480-000-0000</Phone>
+  </Hotel>
+
+  <Hotel Number="21" Stars="3">
+    <Name>Bad State Suites</Name>
+    <Address>
+      <Street>22 Wrong Pl</Street>
+      <City>Tempe</City>
+      <State>Arizona</State>
+      <Zip>85281</Zip>
+    </Address>
+    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
+    <Phone>480-111-1111</Phone>
+  </Hotel>
+
+  <Hotel Number="22">
+    <Name>Weird Zip Hotel</Name>
+    <Address>
+      <Street>33 Zip Ln</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>8528A</Zip>
+    </Address>
+    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
+    <Phone>480-222-2222</Phone>
+  </Hotel>
+
+  <Hotel Number="23" Stars="2">
+    <Name>Order Breaker Lodge</Name>
+    <Address>
+      <Street>44 Sequence Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Phone>480-333-3333</Phone>
+    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
+  </Hotel>
+
+  <Hotel Number="24" Stars="5">
+    <Name>Missing City Resort</Name>
+    <Address>
+      <Street>55 Omission Ave</Street>
+
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <NearestAirport>Phoenix Sky Harbor</NearestAirport>
+    <Phone>480-444-4444</Phone>
   </Hotel>
 
 </Hotels>
