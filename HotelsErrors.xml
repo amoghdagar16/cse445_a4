@@ -4,7 +4,6 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://amoghdagar16.github.io/cse445_a4/Hotels.xsd">
 
-  <!-- ERROR #2: Missing required attribute Number -->
   <Hotel Rating="4" NearestAirport="Phoenix Sky Harbor">
     <Name>Example Inn</Name>
     <Address>
@@ -16,7 +15,6 @@
     <Phone>480-000-0000</Phone>
   </Hotel>
 
-  <!-- ERROR #3: Missing Phone element -->
   <Hotel Number="2" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>No Phone Suites</Name>
     <Address>
@@ -25,10 +23,8 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <!-- Phone intentionally omitted -->
   </Hotel>
 
-  <!-- ERROR #5: Two Name elements -->
   <Hotel Number="3" Rating="3" NearestAirport="Phoenix Sky Harbor">
     <Name>Duplicate Name Hotel</Name>
     <Name>Second Name Not Allowed</Name>
@@ -41,7 +37,6 @@
     <Phone>480-222-2222</Phone>
   </Hotel>
 
-  <!-- ERROR #4: Address has NO closing tag (breaks well-formedness by design) -->
   <Hotel Number="4" Rating="2" NearestAirport="Phoenix Sky Harbor">
     <Name>Unclosed Address Lodge</Name>
     <Address>
@@ -49,11 +44,9 @@
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-    <!-- </Address> intentionally missing -->
     <Phone>480-333-3333</Phone>
   </Hotel>
 
-  <!-- A normal one (optional) -->
   <Hotel Number="5" Rating="5" NearestAirport="Phoenix Sky Harbor">
     <Name>Control Resort</Name>
     <Address>
@@ -66,3 +59,4 @@
   </Hotel>
 
 </Hotel>
+
